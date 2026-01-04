@@ -1,1 +1,21 @@
-# Corenumpypandasscipyscikit-learnstatsmodels# Visualizationmatplotlibseabornshap# Notebook execution nbformatnbclientipykernel# Othersjoblibtqdm
+# Core
+numpy
+pandas
+scipy
+scikit-learn
+statsmodels
+openpyxl
+
+# Visualization
+matplotlib
+seaborn
+shap
+
+# Notebook execution 
+nbformat
+nbclient
+ipykernel
+
+# Others
+joblib
+tqdm
