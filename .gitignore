@@ -1,0 +1,21 @@
+# Environnement virtuel
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Données générées
+data/intermediate/*
+data/outputs/*
+
+# dossiers vides
+!data/intermediate/.gitkeep
+!data/outputs/.gitkeep
