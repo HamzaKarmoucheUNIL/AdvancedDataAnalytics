@@ -20,8 +20,6 @@ data/outputs/*
 !data/intermediate/.gitkeep
 !data/outputs/.gitkeep
 
-data/model_results_final.csv
-
 # --- Generated outputs ---
 executed_notebooks/
 data/model_results_final.csv

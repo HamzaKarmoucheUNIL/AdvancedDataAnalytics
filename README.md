@@ -30,17 +30,19 @@ Our results demonstrate that EV adoption is primarily driven by temporal diffusi
 ```
 
 
-# Quick Start (How to run the code)
+# Quick Start
 
 You can find an automated script (`run_pipeline.py`) that runs the notebooks in the correct order. Please choose the instructions matching your operating system.
 
 
-# First, clone the repository and enter the project folder:
+## First, clone the repository and enter the project folder:
 
+```powershell
 git clone [https://github.com/HamzaKarmoucheUNIL/AdvancedDataAnalytics.git](https://github.com/HamzaKarmoucheUNIL/AdvancedDataAnalytics.git)
 cd AdvancedDataAnalytics
+```
 
-## ------- Windows -------
+## Windows
 
 ```powershell
 python -m venv venv
@@ -50,7 +52,7 @@ python run_pipeline.py
 ```
 
 
-## ------- Mac or Linux -------
+## Mac or Linux
 
 ```bash
 python3 -m venv venv
