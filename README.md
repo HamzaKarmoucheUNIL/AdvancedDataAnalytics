@@ -37,8 +37,10 @@ You can find an automated script (`run_pipeline.py`) that runs the notebooks in 
 
 ## First, clone the repository and enter the project folder:
 
+Here is the repository link: [https://github.com/HamzaKarmoucheUNIL/AdvancedDataAnalytics.git](https://github.com/HamzaKarmoucheUNIL/AdvancedDataAnalytics.git)
+
 ```powershell
-git clone [https://github.com/HamzaKarmoucheUNIL/AdvancedDataAnalytics.git](https://github.com/HamzaKarmoucheUNIL/AdvancedDataAnalytics.git)
+git clone https://github.com/HamzaKarmoucheUNIL/AdvancedDataAnalytics.git
 cd AdvancedDataAnalytics
 ```
 
