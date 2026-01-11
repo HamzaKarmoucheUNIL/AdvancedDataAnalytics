@@ -44,6 +44,8 @@ git clone https://github.com/HamzaKarmoucheUNIL/AdvancedDataAnalytics.git
 cd AdvancedDataAnalytics
 ```
 
+The recommended way to run this project is via the command line (via the Terminal) using the provided `run_pipeline.py` script, which executes the full analysis pipeline in the correct order.
+
 ## Windows
 
 ```powershell
