@@ -30,21 +30,19 @@ Our results demonstrate that EV adoption is primarily driven by temporal diffusi
 ```
 
 
-# Quick Start
+# Quick Start (Recommended)
 
 You can find an automated script (`run_pipeline.py`) that runs the notebooks in the correct order. Please choose the instructions matching your operating system.
 
 
 ## First, clone the repository and enter the project folder:
 
-Here is the repository link: [https://github.com/HamzaKarmoucheUNIL/AdvancedDataAnalytics.git](https://github.com/HamzaKarmoucheUNIL/AdvancedDataAnalytics.git)
-
 ```powershell
 git clone https://github.com/HamzaKarmoucheUNIL/AdvancedDataAnalytics.git
 cd AdvancedDataAnalytics
 ```
 
-The recommended way to run this project is via the command line (via the Terminal) using the provided `run_pipeline.py` script, which executes the full analysis pipeline in the correct order.
+**The recommended way to run this project is via the command line (via the Terminal) using the provided** `run_pipeline.py` **script**, which executes the full analysis pipeline in the correct order.
 
 ## Windows
 
@@ -65,14 +63,19 @@ pip install -r requirements.txt
 python3 run_pipeline.py
 ```
 
-# Manual Execution (Alternative)
+# Notebooks (for inspection of the internal code)
 
-If you prefer to run the notebooks interactively via JupyterLab or VS Code, please execute them in this **strict order** to avoid "file not found" errors:
+The analysis is organized into three main Jupyter notebooks, which are executed sequentially by `run_pipeline.py`:
 
 1. **`notebooks/Main.ipynb`**: Processes raw data from `data/raw/`.
 2. **`notebooks/Merger.ipynb`**: Merges cleaned files into `master_panel_2015_2024.csv`.
 3. **`notebooks/Models.ipynb`**: Trains the models (Gradient Boosting, OLS, etc.) and generates the SHAP plots.
 
+The `run_pipeline.py` script is the recommended and safest entry point, as it provides a consistent execution context and includes the logic required to reliably locate the project root and data directories across environments. If you decide to run the project through these notebooks (instead of `run_pipeline.py`), please make sure that:
+
+- the virtual environment is activated,
+- all dependencies from `requirements.txt` are installed,
+- you are running the notebooks from the project root.
 
 # Outputs
 
