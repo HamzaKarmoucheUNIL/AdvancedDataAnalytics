@@ -28,7 +28,13 @@ def pick_notebook_path(root: Path, name: str) -> Path:
 
 def execute_notebook(nb_path: Path, workdir: Path, timeout: int = 1800) -> None:
     nb_path = nb_path.resolve()
-    print(f"\n=== Running: {nb_path.relative_to(workdir) if nb_path.is_relative_to(workdir) else nb_path} ===")
+
+    try:
+        display = nb_path.relative_to(workdir)
+    except ValueError:
+        display = nb_path
+
+    print(f"\n=== Running: {display} ===")
 
     nb = nbformat.read(nb_path, as_version=4)
     client = NotebookClient(
